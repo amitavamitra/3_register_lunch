@@ -1,0 +1,8 @@
+---
+applications:
+- name: 3_registerlunch
+  random-route: true
+  path: .
+  memory: 128M
+
+  

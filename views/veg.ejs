@@ -1,0 +1,157 @@
+<!-- https://codepen.io/PurpleTigress/pen/eXPxxq -->
+<!-- https://codepen.io/priyanshu-219/pen/MWadRJY -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetarian</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>This is your veg choice.</h1>
+        <form action="/veg" method="POST"  name="veg" id="veg" method="post">  
+
+          <select name="vegoptions" >
+
+          
+        
+        <section class="cart_wrapper">
+            <div class="cart_lists">
+              <div class="cart_title">
+                <span class="material-icons-outlined"></span>
+                Your Choice 
+              </div>
+          
+              <div class="cart_list_wrap">
+                <div class="cart_responsive">
+                <option value="1">
+                        <div class="tr_item">
+                          <div class="td_item item_img">
+                            <img  src="https://images.unsplash.com/photo-1617470703128-26a0fc9af10f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80" width="50%"  height="50%"/>
+                          </div>
+                          <div class="td_item item_name">
+                            <label class="main">Veg Pizza</label>
+                          </div>
+                        
+                          <div class="td_item item_qty">
+                            <select>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="more">More</option>
+                            </select>
+                          </div>
+                          <div class="td_item item_price">
+                            <label>$ xxx.00</label>
+                          </div>
+                          <div class="td_item item_remove">
+                            <span class="material-icons-outlined">close</span>
+                          </div>
+                        </div>
+                </option>
+                <option value="2">
+                      <div class="tr_item">
+                        <div class="td_item item_img">
+                          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" width="50%" height="50%" />
+                        </div>
+                        <div class="td_item item_name">
+                          <label class="main">Vegan salad bowl</label>
+                          
+                        </div>
+                        
+                        <div class="td_item item_qty">
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="more">More</option>
+                          </select>
+                        </div>
+                        <div class="td_item item_price">
+                          <label>$ xxx.00</label>
+                        </div>
+                        <div class="td_item item_remove">
+                          <span class="material-icons-outlined">close</span>
+                        </div>
+                      </div>
+                    </option>
+                  <option value="3">
+                        <div class="tr_item">
+                          <div class="td_item item_img">
+                            <img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=631&q=80" width="50%" height="50%" />
+                          </div>
+                          <div class="td_item item_name">
+                            <label class="main">Paneer Rice</label>
+                            
+                          </div>
+                          
+                          <div class="td_item item_qty">
+                            <select>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="more">More</option>
+                            </select>
+                          </div>
+                          <div class="td_item item_price">
+                            <label>$ xxx.00</label>
+                          </div>
+                          <div class="td_item item_remove">
+                            <span class="material-icons-outlined">close</span>
+                          </div>
+                        </div>
+                </option>
+                <option>
+                
+                      <div class="tr_item">
+                        <div class="td_item item_img">
+                          <img src="https://images.unsplash.com/photo-1588930850267-fe671c9ed91f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" width="50%" height="50%" />
+                        </div>
+                        <div class="td_item item_name">
+                          <label class="main">Fresh made cauliflower and hazelnut salad, served fresh...</label>
+                        
+                        </div>
+                        
+                        <div class="td_item item_qty">
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="more">More</option>
+                          </select>
+                        </div>
+                        <div class="td_item item_price">
+                          <label>$ xxx.00</label>
+                        </div>
+                        <div class="td_item item_remove">
+                          <span class="material-icons-outlined">close</span>
+                        </div>
+                      </div>
+                </option>      
+                </div>
+        
+          
+            <div class="cart_details">
+  
+                <button class="btn btn-lg  btn-primary" >See you at lunch</button>
+              </div>
+          
+            
+          </section>
+        </select>
+    </form>
+
+</body>
+</html>

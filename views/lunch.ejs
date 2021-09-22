@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body background="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+<h1>Lunch App - Please choose your favourite...</h1>
+<h4>Note: the data inside is for demo only. There is no policy therein to suggest these assumptions</h4>
+    <div class="hamburger closed">
+        <div class="line one"></div>
+        <div class="line two"></div>
+        <div class="line three"></div>
+      </div>
+      
+      <div class="menu">
+        <h1>Menu</h1>
+        <h2 class="link"><a href="#">Home</a></h2>
+        <h2 class="link"><a href="/vegetarian">Vegetarian</a></h2>
+        <h2 class="link"><a href="nonveg">Non-Vegetarian</a></h2>
+        <h2 class="link"><a href="smart">Smart Choice</a></h2>
+        <h2 class="link"><a href="#">Yet to decide</a></h2>
+        <h2 class="link"><a href="/cart">cart</a></h2>
+        <h2 class="link"><a href="#">Tell us more</a></h2>
+        <h2 class="link"><a href="sustain">Sustainability</a></h2>
+        
+      </div>
+      <script>
+
+let icon = document.querySelector('.hamburger');
+let menu = document.querySelector('.menu');
+let one = document.querySelector('.one');
+let two = document.querySelector('.two');
+let three = document.querySelector('.three');
+
+let open = () => {
+    one.style.transform = 'rotate(45deg)';
+    two.style.transform = 'rotate(-45deg)';
+    one.style.top = '12px';
+    two.style.top = '12px';
+    three.style.top = '24px';
+    three.style.opacity = '0';
+
+    menu.style.transform = 'translateX(0)';
+
+    icon.classList.remove('closed');
+    icon.classList.add('open');
+    
+    icon.removeEventListener('click', open);
+    icon.addEventListener('click', close);
+};
+
+let close = () => {
+    
+    one.style.transform = 'rotate(0)';
+    two.style.transform = 'rotate(0)';
+
+    three.style.opacity = '1';
+  
+    one.style.top = '0';
+    two.style.top = '12px';
+    three.style.top = '24px';
+
+    menu.style.transform = 'translateX(-100%)';
+
+    icon.classList.remove('open');
+    icon.classList.add('closed');
+  
+    icon.removeEventListener('click', close);
+    icon.addEventListener('click', open);
+};
+
+
+  if(icon.classList.contains('closed')){
+    icon.addEventListener('click', open);
+  } else {
+    icon.addEventListener('click', close);
+  }
+
+      </script>
+</body>
+</html>

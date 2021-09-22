@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+body {
+  margin: 0;
+  background-image: url(https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  background-size: cover;
+  background-position: center;
+  color: rgb(240, 22, 22);
+  font-family: 'Raleway', sans-serif;
+}
+
+.menu {
+  height: 100vh;
+  width: 35%;
+  background:#29313A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-100%);
+  position: relative;
+  z-index: 0;
+  transition: 1s;
+  overflow: hidden;
+}
+
+h1 {
+  margin-bottom: 32px;
+  padding: 20px;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-align: center;
+  width: 100%;
+  height: 32px;
+  color: #fff;
+}
+
+h2 {
+  margin: 12px;
+  font-size: 24px;
+  font-weight: 200;
+  position: relative;
+  z-index: 2;
+}
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.line {
+  height: 4px;
+  width: 40px;
+  top: 0;
+  background-color: white;
+  transition: 1s;
+  position: absolute;
+}
+
+.two {
+  top: 12px;
+}
+
+.three {
+  top: 24px;
+}
+
+.hamburger {
+  margin: 38px;
+  position: absolute;
+  cursor: pointer;
+  background-color: transparent;
+  height: 30px;
+  width: 40px;
+  z-index: 1;
+}
+
+p{
+  color:white;
+  font-size: 25px;
+  background-color: seagreen;
+}
+
+#ta{
+  font-size: 30px;
+  font-style: italic;
+}
+.table{
+  color : red;
+  font-size: 30px;
+  background-color: seagreen;
+}
+
+h4{
+  text-align: center;
+}
+
